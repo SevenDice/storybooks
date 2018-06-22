@@ -1,12 +1,12 @@
-<h1>Welcome {{user.firstName}}</h1>
-<h4>Your Stories</h4>
+<h1>Добро пожаловать {{user.firstName}}</h1>
+<h4>Ваши истории</h4>
 {{#if stories}}
   <table class="striped">
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Status</th>
+        <th>Название</th>
+        <th>Дата</th>
+        <th>Статус</th>
         <th></th>
       </tr>
     </thead>
@@ -29,5 +29,5 @@
     </tbody>
   </table>
 {{else}}
-  <p>You have not created any stories yet</p>
+  <p>У вас нет созданных историй</p>
 {{/if}}
