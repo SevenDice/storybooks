@@ -13,17 +13,17 @@
     {{#if story.allowComments}}
       <div class="card">
         <div class="card-content">
-          <span class="card-title">Comments</span>
+          <span class="card-title">Комментарии</span>
           {{#if user}}
             <form method="post" action="/stories/comment/{{story.id}}">
               <div class="input-field">
                 <textarea name="commentBody" class="materialize-textarea"></textarea>
-                <label> Add Comment</label>
+                <label> Добавить комментарий</label>
               </div>
               <input type="submit" value="Submit" class="btn">
             </form>
           {{else}}
-            <p>Please <a href="/auth/google">log</a> in to leave a comment</p>
+            <p>Пожалуйста <a href="/auth/google">войдите</a> чтобы оставить комментарий</p>
           {{/if}}
         </div>
       </div>
